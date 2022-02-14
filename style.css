@@ -32,9 +32,15 @@ body {
   margin: auto;
 }
 
+a, ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 /* Navigation */
 .navbar {
   display: flex;
+  max-width: 1600px;
   width: inherit;
   justify-content: space-between;
   align-items: center;
@@ -163,12 +169,20 @@ body {
   
 }
 
+
+
 .logo-small {
-   width: 100%;
-  
-  
-  
+  display: block;
+  width: 100%;
+  margin: auto;
 }
+
+.logoSmall-footer {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
 
 .header {
   text-align: center;
@@ -382,11 +396,53 @@ label {
   background-color: darkgreen;
 }
 
+/* Footer Mobile */
+
+.footer {
+  display: block;
+  width: 100%;
+  margin-top: 10em;
+  
+}
+
+.link-list {
+  padding: 0em 1em;
+  margin-bottom: 5em;
+  text-align: center;  
+  
+}
+
+.link {
+  margin-bottom: .75em;
+}
+
+.links {
+  color: var(--text-white);
+  font-size: var(--text-small);  
+}
+
+.links:hover {
+  color: var(--logo-blue);
+  font-size: var(--text-med);
+
+}
+
+.facebook {
+  display: block;
+  margin: auto;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  color: var(--text-white);
+}
+
 @media only screen and (min-width: 700px) {
   .header-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 6em;
   }
@@ -420,6 +476,12 @@ label {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: top;
+  }
+
+  /* footer 700px */
+
+  .link-list {    
+    margin-bottom: 0em;       
   }
 }
 
