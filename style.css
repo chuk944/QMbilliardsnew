@@ -46,6 +46,7 @@ a, ul {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: var(--nav-color);
+  color: var(--text-white);
   position: fixed;
   top: 0px;
 }
@@ -77,18 +78,20 @@ a, ul {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #475569;
+  color: var(--logo-blue);
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  font-size: var(--text-med);
+  
 }
 
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: var(--logo-blue);
+.nav-link:focus {
+  border: 1px solid black;
+  color: red;
 }
+
+
 
 /* Navigation Mobile */
 
@@ -177,10 +180,17 @@ a, ul {
   margin: auto;
 }
 
+.logoSmall-nav {
+  display: block;
+  width: 20%;
+ 
+}
+
 .logoSmall-footer {
   display: block;
   width: 70%;
-  margin: auto;
+  margin:auto;
+ 
 }
 
 
@@ -381,6 +391,12 @@ label {
 
 .message {
   width: 80%;
+}
+
+textarea:focus {
+  background: lightgrey;
+  color: black;
+  font-family: 'Dongle', sans-serif;
 }
 .submit {
   margin-top: 0.5em;
