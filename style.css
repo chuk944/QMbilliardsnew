@@ -79,6 +79,7 @@ a, ul {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--logo-blue);
+
 }
 
 .nav-link:hover {
@@ -87,8 +88,10 @@ a, ul {
 }
 
 .nav-link:focus {
-  border: 1px solid black;
-  color: red;
+  outline: 4px solid black;
+  outline-offset: 5px;
+  outline-style: outset;
+  color:darkred ;
 }
 
 
@@ -331,12 +334,12 @@ a, ul {
 
 /* Section Contact Mobile */
 
-.contact-flex {
+.contact-flex, .faq-flex {
   display: flex;
   flex-direction: column;
 }
 
-.info-flex {
+.info-flex, .faqA-flex {
   display: block;
   flex-basis: 35%;
   background-color: #fff;
@@ -346,7 +349,7 @@ a, ul {
   text-align: center;
 }
 
-.contact-text {
+.contact-text  {
   font-family: 'Dongle', sans-serif;
   font-size: var(--text-med);
   font-weight: 400;
@@ -357,7 +360,7 @@ a, ul {
   margin-bottom: 4em;
 }
 
-.message-flex {
+.message-flex, .faqB-flex {
   display: block;
   flex-basis: 35%;
   background-color: #fff;
@@ -412,6 +415,33 @@ textarea:focus {
   background-color: darkgreen;
 }
 
+/* FAQ mobile */
+
+.questions {
+  display: block;
+  width: 90%;
+  margin: 3em auto;
+}
+
+.quest-header {
+  font-size: 2em;
+  letter-spacing: 1.25px;
+  font-family: 'Dongle', sans-serif;
+}
+
+.answer {
+  font-size: 1.75rem;
+  text-align: left;
+  font-family: 'Dongle', sans-serif;
+  line-height: 25px;
+
+}
+.room {
+  text-align: left;
+  font-size: 1.6em;
+  list-style-type:circle ;
+}
+
 /* Footer Mobile */
 
 .footer {
@@ -459,7 +489,7 @@ textarea:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     margin-top: 6em;
   }
 
@@ -487,7 +517,7 @@ textarea:focus {
   }
 
   /* Contact 700px */
-  .contact-flex {
+  .contact-flex, .faq-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
